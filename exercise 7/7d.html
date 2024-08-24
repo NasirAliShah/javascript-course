@@ -12,11 +12,12 @@
         return result;
       }
       function convertToTemprature(degree, unit) {
-        let result = "";
         if (unit === "C") {
-          result = convertToFahrenheit(degree);
+          const result = convertToFahrenheit(degree);
+          return `${result}F`;
         } else {
-          result = convertToCelsius(degree);
+          const result = convertToCelsius(degree);
+          return `${result}C`;
         }
         return result;
       }
