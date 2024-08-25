@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      const basketballObject = {
+        name: "basketball",
+        price: 2095,
+        "delivery-time": "3 days",
+      };
+      basketballObject.price = 2095 + 500;
+      console.log(basketballObject);
+
+      const product1 = {
+        name: "shirt",
+        price: 300,
+      };
+      const product2 = {
+        name: "baseball",
+        price: 200,
+      };
+      function comparePrice(product1, product2) {
+        if (product1.price > product2.price) {
+          console.log(product2.price);
+        } else {
+          console.log(product1.price);
+        }
+      }
+      comparePrice(product1, product2);
+    </script>
+  </body>
+</html>
