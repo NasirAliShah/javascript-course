@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name</title>
+  </head>
+  <body>
+    <input
+      placeholder=" Type Something"
+      class="js-input-name"
+      onkeyup="
+      displayMessage();
+    "
+    />
+
+    <p class="js-name"></p>
+    <script>
+      function displayMessage() {
+        const inputElement = document.querySelector(".js-input-name");
+        document.querySelector(".js-name").innerHTML = `${inputElement.value}`;
+      }
+    </script>
+  </body>
+</html>
