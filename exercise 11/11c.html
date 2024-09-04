@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 11</title>
+  </head>
+  <body>
+    <script>
+      function arraySwap(arr) {
+        const lastIndex = arr.length - 1;
+
+        const lastValue = arr[lastIndex];
+        const firstValue = arr[0];
+
+        arr[0] = lastValue;
+        arr[lastIndex] = firstValue;
+        return arr;
+      }
+      console.log(arraySwap([1, 20, 22, 24, 5]));
+    </script>
+  </body>
+</html>
